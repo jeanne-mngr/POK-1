@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title>Interrail de Jeanne - Allemagne</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="styleFlensburg.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <special-header></special-header>
+    <main class="city">
+        <h1>Flensburg</h1>
+        <div class="div-city">
+            <div >
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        const selector = document.getElementById("map")
+                        const center = { lat: 54.785520 ,  lng: 9.438026 }
+                  
+                        const stNicolas = { lat: 54.783079, lng: 9.435681 }
+                        const street = { lat: 54.784801, lng: 9.435070 }
+                        const options = {
+                            center: center,
+                            zoom : 15.5,
+                        }
+
+                        const map = new google.maps.Map(selector, options);
+                        const church = new google.maps.Marker({
+                            position: stNicolas,
+                            label: "Église",
+                            map: map,
+                        });
+                        const streetPoint = new google.maps.Marker({
+                            position: street,
+                            map: map,
+                        });
+                    }
+
+
+                </script>
+                    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS9C3fd_d4t84hqhU4SGJifv0ESD-u9vE&callback=initMap"></script>
+                
+            </div>   
+            <div class="text" >
+                <p>À cause d'un retard de 20 min de notre premier train du jour, nous avons raté notre deuxième train.
+                    Nous avions donc 1h40 devant nous pour visiter Flenburg.
+                    Cette ville nous a beaucoup surprises : on s'attendait à rien et finalement on a beaucoup aimé et pour ça, on peut dire "viel Dank" à une dame qui nous a abordées dans l'église et qui nous a expliquée plusieurs petites choses sur l'église et sur la ville dans un anglais approximatif. 
+                </p>
+                </br>
+                <p>
+                    Elle nous a notamment montré une œuvre de l'église qui ne montre pas la même chose en fonction de si tu la regardes de la droite ou de la gauche.
+                    Mais le plus important était que cette œuvre avait été faite au 18e siècle par une femme ! 
+                    Sur une des canalisations extérieures de l'église, elle nous a aussi montré une petite souris sculptée qui porte chance si on lui gratte l'oreille. Le reste du voyage devrait bien se passer alors !
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="text">
+            <p>
+            Nous avons ensuite descendu la rue commerçante jusqu'au port comme elle nous l'avait recommandé avant de remonter en vitesse à la gare pour ne pas rater un autre train ! 
+            La ville était très mignonne avec de vieilles maisons car elle n'a pas été bombardée pendant les guerres. 
+            </p>
+        </div>
+        <div class="grid-paysages">
+            <img src="flensburg_img/flensburg1.jpeg" alt="Photo Flensburg" class="img1">
+           
+            <a href="flensburg_img/flensburg2.jpeg" class="img2">
+                <img src="flensburg_img/flensburg2.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg3.jpeg" class="img3">
+                <img src="flensburg_img/flensburg3.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg4.jpeg" class="img4">
+                <img src="flensburg_img/flensburg4.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg10.jpeg" class="img5">
+                <img src="flensburg_img/flensburg10.jpeg" alt="Photo Flensburg" >
+            </a>
+            
+            <a href="flensburg_img/flensburg6.jpeg" class="img6">
+                <img src="flensburg_img/flensburg6.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg7.jpeg" class="img7">
+                <img src="flensburg_img/flensburg7.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg8.jpeg" class="img8">
+                <img src="flensburg_img/flensburg8.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg9.jpeg" class="img9">
+                <img src="flensburg_img/flensburg9.jpeg" alt="Photo Flensburg" >
+            </a>
+            <a href="flensburg_img/flensburg5.jpeg" class="img10">
+                <img src="flensburg_img/flensburg5.jpeg" alt="Photo Flensburg" >
+            </a>
+            
+        </div>
+        
+    </main>
+    <special-footer></special-footer>
+    <script src="headerFooterManager.js"></script>
+</body>
+
+</html>

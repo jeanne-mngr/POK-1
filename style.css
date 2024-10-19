@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+  }
+
+body {
+    font-family: "Delicious Handrawn", cursive;
+    background-color: #FFF9EC;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 78.5px;
+    top: 0px;
+    right: 0px;
+}
+
+.menu p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, p, a {
+    color: #123C69;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+p a {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 4em;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+special-header nav{
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    background-color: #DAAB3A;
+    z-index: 1;
+}
+
+special-footer div {
+    border-top: 3px #DAAB3A solid;
+    padding: 20px;
+}
+
+.dropdown-child {
+    display: none;
+    position: absolute;
+    background-color: #123C69;
+    height: 400px;
+    overflow: auto;
+}
+
+.dropdown-child2 {
+    display: none;
+    position:absolute;
+    right: 0px;
+    /* margin-top: 500px; */
+    background-color: #123C69;
+    height: 400px;
+    overflow: auto;
+}
+
+.dropdown-child a,
+.dropdown-child2 a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child,
+.dropdown:hover .dropdown-child2 {
+    display: block;
+}
+
+.dropdown:hover .option {
+    display: flex;
+    background-color: #123C69;
+    color: white;
+    height: 78.5px;
+    align-items: center;
+}
+
+.a-propos-nav:hover {
+    display: flex;
+    background-color: #123C69;
+    color: white;
+    height: 78.5px;
+    align-items: center;
+}

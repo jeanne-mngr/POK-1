@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title>Interrail de Jeanne</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="styleAPropos.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <script src="scriptContact.js" defer></script>
+</head>
+
+<body>
+    <special-header></special-header>
+    <main class="a-propos">
+        <p> Ce site à été fait par Jeanne Ménager. Les photos sont de Jeanne, Alessia et Bérénice</p>
+        
+        <h2>Si vous souhaitez plus d'info, vous pouvez me contacter : </h2>
+        <form>
+            <label for="nom" required>Nom Prénom</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Nom Prénom"><br>
+            <label for="email" required>Adresse e-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="nom@domaine.com"><br>
+            <label for="message" required>Votre message :</label><br>
+            <input type="text" id="message" name="message" placeholder="Message"><br>
+            <button id="boutonEnvoyer">Envoyer un e-mail</button>
+        </form>
+    </main>
+    <special-footer></special-footer>
+    <script src="headerFooterManager.js"></script>
+</body>
+
+</html>

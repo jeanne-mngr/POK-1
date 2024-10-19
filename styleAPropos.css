@@ -1,0 +1,41 @@
+.a-propos {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-propos h2 {
+    margin-top: 5%;
+}
+
+input[type='text'],
+input[type='email'] {
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 45px;
+}
+
+
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+    color: #1F2039;
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #1F2039;
+    background-color: #A4A6B1;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    color: #123C69;
+    background-color: #123C69;
+    cursor: pointer;
+}
